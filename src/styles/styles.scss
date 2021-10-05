@@ -1,0 +1,55 @@
+
+:root {
+    --width-container-login: 55%;
+    --size-logo-login: 30%;
+    --fontSize-iniciarSesion: 2rem;
+    --width-input-login: 40%;
+
+    --columns-home-container: 0.5fr 0.5fr;
+
+    --request-header-flexDirection: row;
+    --statusOption-flexDirection: column;
+    --statusOption-circleMargin: 0px 0px 0.2rem 0px;
+
+    --height-container-requests: 91vh;
+
+    --width-container-newRequest: 70%;
+    --height-container-newRequest: auto;
+
+    --form-design-container-flexDirection: row;
+
+    --width-customSwalImage: 60vw;
+    --height-customSwalImage: 95vh;
+
+    @media screen and (max-width: 1024px) {
+        --width-container-login: 90%;
+        --size-logo-login: 50%;
+        --fontSize-iniciarSesion: 1.6rem;
+        --width-input-login: 75%;
+
+        --columns-home-container: 1fr;
+
+        --request-header-flexDirection: column;
+        --statusOption-flexDirection: row;
+        --statusOption-circleMargin: 0px 0.5rem 0.2rem 0px;
+
+        --height-container-requests: auto;
+
+        --width-container-newRequest: 84%;
+        --height-container-newRequest: 80%;
+
+        --form-design-container-flexDirection: column;
+
+        --width-customSwalImage: 100vw;
+        --height-customSwalImage: 70vh;
+    }
+}
+
+
+@import './base';
+
+@import './components/LoginScreen';
+@import './components/HomeScreen';
+@import './components/FormDesignOne';
+@import './components/RequestHeader';
+@import './components/NewRequest.scss';

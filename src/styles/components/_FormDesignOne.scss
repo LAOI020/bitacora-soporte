@@ -1,0 +1,80 @@
+
+.form-design-one-container {
+    display: flex;
+    flex-direction: var(--form-design-container-flexDirection);
+}
+
+.formDesign-one-dropdowns-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+
+    :first-child {
+        margin-right: 2rem;
+    }
+
+    select {
+        padding: 5px;
+        border-radius: 8px;
+    }
+}
+
+.formDesign-one-description {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    h5 {
+        margin: 0;
+    }
+
+    h6 {
+        cursor: pointer;
+        background-color: black;
+        padding: 8px;
+        border-radius: 6px;
+        transition: .5s ease;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+    
+    div {
+        display: flex;
+        padding: 3px;
+        border-bottom: 1px solid white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    textarea, input {
+        width: 100%;
+        height: 80px;
+        resize: none;
+        padding: 0;
+        border: none;
+        background-color: darken($color: white, $amount: 20);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    img {
+        cursor: pointer;
+        align-self: center;
+        padding: 2px 0px 2px 0px;
+        width: 90%;
+    }
+}
+
+.custom-swal-image {
+    width: var(--width-customSwalImage);
+    height: var(--height-customSwalImage);
+    padding: 0px;
+    background-color: transparent;
+}

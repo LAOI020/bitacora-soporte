@@ -1,0 +1,53 @@
+
+.request-header-container {
+    cursor: pointer;
+    background-color: #017F83;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 4px;
+    border-radius: 10px;
+    transition: .4s ease;
+    
+    &:hover {
+        background-color: darken($color: #017F83, $amount: 15);
+    }
+
+    h5 {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+}
+.request-header-container-disableHover {
+    background-color: #017F83;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+
+    h5 {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
+.request-header-flexRow {
+    display: flex;
+    flex-direction: var(--request-header-flexDirection);
+    justify-content: space-between;
+}
+.status-option {
+    display: flex;
+    flex-direction: var(--statusOption-flexDirection);
+    align-items: center;
+
+    div {
+        height: 1.3rem;
+        width: 1.3rem;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin: var(--statusOption-circleMargin);
+    }
+
+    h6 {
+        margin: 0;
+    }
+}
